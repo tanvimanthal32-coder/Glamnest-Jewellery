@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f3f0;
+}
+
+header{
+    background:#6d214f;
+    padding:15px 50px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)),
+    url('https://images.unsplash.com/photo-1617038260897-41a1f14a8ca5');
+    background-size:cover;
+    background-position:center;
+}
+
+.content{
+    color:white;
+}
+
+.content h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+button{
+    padding:12px 30px;
+    border:none;
+    background:#d4af37;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#b8941f;
+}
+</style>
+<script>
+  function showMessage() {
+    alert("Welcome to GlamNest!");
+}
+</script>
+   
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">GlamNest</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Luxury Jewellery Collection</h1>
+            <p>Discover elegant rings, necklaces, earrings and bracelets.</p>
+            <button onclick="showMessage()">Shop Now</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
